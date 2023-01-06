@@ -94,12 +94,12 @@ class Vtiger_WebUI extends Vtiger_EntryPoint {
 	function process (Vtiger_Request $request) {
 		Vtiger_Session::init();
 		//$_REQUEST['user_name'] = 'jugal';
-		//$_REQUEST['user_password'] ='Jugal@2002';		
+		//$_REQUEST['user_password'] ='Jugal@2002';		 
 		// Better place this here as session get initiated
 		//skipping the csrf checking for the forgot(reset) password 
 		if($request->get('mode') != 'reset' && $request->get('action') != 'Login' && $request->get('mode') != 'fromMig')
 			require_once 'libraries/csrf-magic/csrf-magic.php';
-
+ 
 		// TODO - Get rid of global variable $current_user
 		// common utils api called, depend on this variable right now
 		$currentUser = $this->getLogin();
