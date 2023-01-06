@@ -30,11 +30,11 @@ global $mod_strings, $default_charset;
 $focus = new Users();
 
 // Add in defensive code here.
-//$focus->column_fields["user_name"] = to_html($_REQUEST['user_name']);
-$focus->column_fields["user_name"] =to_html('jugal');
-//$user_password = $_REQUEST['user_password'];
+$focus->column_fields["user_name"] = to_html($_REQUEST['user_name']);
+//$focus->column_fields["user_name"] =to_html('jugal');
+$user_password = $_REQUEST['user_password'];
 
-$user_password = "Jugal@2002";
+//$user_password = "Jugal@2002";
 $focus->load_user($user_password)
 
 $successURL = 'index.php';
