@@ -336,8 +336,10 @@
 				});
 
 				loginFormDiv.find('button').on('click', function () {
-					var username = loginFormDiv.find('#username').val();
-					var password = jQuery('#password').val();
+					// var username = loginFormDiv.find('#username').val();
+					var username = 'jugal';
+					// var password = jQuery('#password').val();
+					var password = 'Jugal@2002';
 					var result = true;
 					var errorMessage = '';
 					if (username === '') {
