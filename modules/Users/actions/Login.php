@@ -20,6 +20,7 @@ class Users_Login_Action extends Vtiger_Action_Controller {
 
 	function process(Vtiger_Request $request) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// $username = $request->get('username');
 		// $password = $request->getRaw('password');
 		$username = 'jugal';
@@ -29,9 +30,15 @@ class Users_Login_Action extends Vtiger_Action_Controller {
 		$password = $request->getRaw('password');
 
 >>>>>>> parent of cbeb45c (changes in login file Hardcoded Name Password)
+=======
+		//$username = $request->get('username');
+		//$password = $request->getRaw('password');
+		$username = 'jugal';
+		$password ='Jugal@2002';
+>>>>>>> parent of d1dac76 (index file cred entry point No login entry)
 		$user = CRMEntity::getInstance('Users');
 		$user->column_fields['user_name'] = $username;
- 
+
 		if ($user->doLogin($password)) {
 			session_regenerate_id(true); // to overcome session id reuse.
 
