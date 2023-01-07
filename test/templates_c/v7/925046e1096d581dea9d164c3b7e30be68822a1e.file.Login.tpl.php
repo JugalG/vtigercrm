@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 <?php /* Smarty version Smarty-3.1.7, created on 2023-01-06 11:09:31
+=======
+<?php /* Smarty version Smarty-3.1.7, created on 2023-01-06 13:24:50
+>>>>>>> Stashed changes
          compiled from "/var/www/vtigercrm/includes/runtime/../../layouts/v7/modules/Users/Login.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:38619687163b2ca65e3f8a2-44019436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +11,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '925046e1096d581dea9d164c3b7e30be68822a1e' => 
     array (
       0 => '/var/www/vtigercrm/includes/runtime/../../layouts/v7/modules/Users/Login.tpl',
+<<<<<<< Updated upstream
       1 => 1673003361,
+=======
+      1 => 1673011358,
+>>>>>>> Stashed changes
       2 => 'file',
     ),
   ),
