@@ -1,5 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2023-01-07 06:30:47
-         compiled from "/var/www/vtigercrm/includes/runtime/../../layouts/v7/modules/Users/Login.tpl" */ ?>
+
+<?php /* Smarty version Smarty-3.1.7, created on 2023-01-02 12:13:25
+compiled from "/var/www/vtigercrm/includes/runtime/../../layouts/v7/modules/Users/Login.tpl" */?>
 <?php /*%%SmartyHeaderCode:38619687163b2ca65e3f8a2-44019436%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -7,7 +8,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '925046e1096d581dea9d164c3b7e30be68822a1e' => 
     array (
       0 => '/var/www/vtigercrm/includes/runtime/../../layouts/v7/modules/Users/Login.tpl',
-      1 => 1673071942,
+      1 => 1673011358,
       2 => 'file',
     ),
   ),
@@ -15,8 +16,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_63b2ca65e50df',
   'variables' => 
   array (
     'ERROR' => 0,
@@ -29,6 +28,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'DATA_COUNT' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.7',
+  'unifunc' => 'content_63b2ca65e50df',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_63b2ca65e50df')) {function content_63b2ca65e50df($_smarty_tpl) {?>
 
@@ -52,4 +53,9 @@ $_smarty_tpl->tpl_vars['BLOCK_DATA']->_loop = true;
 </b></h3><?php echo $_smarty_tpl->tpl_vars['BLOCK_DATA']->value['displaySummary'];?>
 <br><br><a href="<?php echo $_smarty_tpl->tpl_vars['BLOCK_DATA']->value['url'];?>
 " target="_blank"><u><?php echo $_smarty_tpl->tpl_vars['BLOCK_DATA']->value['urlalt'];?>
+<<<<<<< HEAD
 </u></a></div><?php if ($_smarty_tpl->tpl_vars['BLOCK_DATA']->value['image']){?></div><?php }else{ ?></div><?php }?></li><?php } ?></ul></div><?php if ($_smarty_tpl->tpl_vars['ALL_BLOCKS_COUNT']->value!=$_smarty_tpl->tpl_vars['DATA_COUNT']->value){?><br><hr><?php }?><?php }?><?php } ?></div><?php }else{ ?><div class="inActiveImgDiv"><div><h4>Get more out of Vtiger with extensions from</h4><h4>Vtiger Marketplace</h4></div><a href="https://marketplace.vtiger.com/app/listings" target="_blank" style="margin-right: 25px;"><img src="layouts/v7/resources/Images/extensionstore.png" style="width: 85%; height: 100%; margin-top: 25px;"/></a></div><?php }?></div></div></div><script>jQuery(document).ready(function () {var validationMessage = jQuery('#validationMessage');var forgotPasswordDiv = jQuery('#forgotPasswordDiv');var loginFormDiv = jQuery('#loginFormDiv');loginFormDiv.find('#password').focus();loginFormDiv.find('a').climcustick(function () {loginFormDiv.toggleClass('hide');forgotPasswordDiv.toggleClass('hide');validationMessage.addClass('hide');});forgotPasswordDiv.find('a').click(function () {loginFormDiv.toggleClass('hide');forgotPasswordDiv.toggleClass('hide');validationMessage.addClass('hide');});loginFormDiv.find('button').on('click', function () {var username = loginFormDiv.find('#username').val();var password = jQuery('#password').val();var result = true;var errorMessage = '';if (username === '') {errorMessage = 'Please enter valid username';result = false;} else if (password === '') {errorMessage = 'Please enter valid password';result = false;}if (errorMessage) {validationMessage.removeClass('hide').text(errorMessage);}return result;});forgotPasswordDiv.find('button').on('click', function () {var username = jQuery('#forgotPasswordDiv #fusername').val();var email = jQuery('#email').val();var email1 = email.replace(/^\s+/, '').replace(/\s+$/, '');var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;var result = true;var errorMessage = '';if (username === '') {errorMessage = 'Please enter valid username';result = false;} else if (!emailFilter.test(email1) || email == '') {errorMessage = 'Please enter valid email address';result = false;} else if (email.match(illegalChars)) {errorMessage = 'The email address contains illegal characters.';result = false;}if (errorMessage) {validationMessage.removeClass('hide').text(errorMessage);}return result;});jQuery('input').blur(function (e) {var currentElement = jQuery(e.currentTarget);if (currentElement.val()) {currentElement.addClass('used');} else {currentElement.removeClass('used');}});var ripples = jQuery('.ripples');ripples.on('click.Ripples', function (e) {jQuery(e.currentTarget).addClass('is-active');});ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {jQuery(e.currentTarget).removeClass('is-active');});loginFormDiv.find('#username').focus();var slider = jQuery('.bxslider').bxSlider({auto: true,pause: 4000,nextText: "",prevText: "",autoHover: true});jQuery('.bx-prev, .bx-next, .bx-pager-item').live('click',function(){ slider.startAuto(); });jQuery('.bx-wrapper .bx-viewport').css('background-color', 'transparent');jQuery('.bx-wrapper .bxslider li').css('text-align', 'left');jQuery('.bx-wrapper .bx-pager').css('bottom', '-40px');var params = {theme		: 'dark-thick',setHeight	: '100%',advanced	:	{autoExpandHorizontalScroll:true,setTop: 0}};jQuery('.scrollContainer').mCustomScrollbar(params);});</script></div><?php }} ?>
+=======
+
+</u></a></div><?php if ($_smarty_tpl->tpl_vars['BLOCK_DATA']->value['image']){?></div><?php }else{ ?></div><?php }?></li><?php } ?></ul></div><?php if ($_smarty_tpl->tpl_vars['ALL_BLOCKS_COUNT']->value!=$_smarty_tpl->tpl_vars['DATA_COUNT']->value){?><br><hr><?php }?><?php }?><?php } ?></div><?php }else{ ?><div class="inActiveImgDiv"><div><h4>Get more out of Vtiger with extensions from</h4><h4>Vtiger Marketplace</h4></div><a href="https://marketplace.vtiger.com/app/listings" target="_blank" style="margin-right: 25px;"><img src="layouts/v7/resources/Images/extensionstore.png" style="width: 85%; height: 100%; margin-top: 25px;"/></a></div><?php }?></div></div></div><script>jQuery(document).ready(function () {var validationMessage = jQuery('#validationMessage');var forgotPasswordDiv = jQuery('#forgotPasswordDiv');var loginFormDiv = jQuery('#loginFormDiv');loginFormDiv.find('#password').focus();loginFormDiv.find('a').click(function () {loginFormDiv.toggleClass('hide');forgotPasswordDiv.toggleClass('hide');validationMessage.addClass('hide');});forgotPasswordDiv.find('a').click(function () {loginFormDiv.toggleClass('hide');forgotPasswordDiv.toggleClass('hide');validationMessage.addClass('hide');});loginFormDiv.find('button').on('click', function () {var username = loginFormDiv.find('#username').val();var password = jQuery('#password').val();var result = true;var errorMessage = '';if (username === '') {errorMessage = 'Please enter valid username';result = false;} else if (password === '') {errorMessage = 'Please enter valid password';result = false;}if (errorMessage) {validationMessage.removeClass('hide').text(errorMessage);}return result;});forgotPasswordDiv.find('button').on('click', function () {var username = jQuery('#forgotPasswordDiv #fusername').val();var email = jQuery('#email').val();var email1 = email.replace(/^\s+/, '').replace(/\s+$/, '');var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;var result = true;var errorMessage = '';if (username === '') {errorMessage = 'Please enter valid username';result = false;} else if (!emailFilter.test(email1) || email == '') {errorMessage = 'Please enter valid email address';result = false;} else if (email.match(illegalChars)) {errorMessage = 'The email address contains illegal characters.';result = false;}if (errorMessage) {validationMessage.removeClass('hide').text(errorMessage);}return result;});jQuery('input').blur(function (e) {var currentElement = jQuery(e.currentTarget);if (currentElement.val()) {currentElement.addClass('used');} else {currentElement.removeClass('used');}});var ripples = jQuery('.ripples');ripples.on('click.Ripples', function (e) {jQuery(e.currentTarget).addClass('is-active');});ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {jQuery(e.currentTarget).removeClass('is-active');});loginFormDiv.find('#username').focus();var slider = jQuery('.bxslider').bxSlider({auto: true,pause: 4000,nextText: "",prevText: "",autoHover: true});jQuery('.bx-prev, .bx-next, .bx-pager-item').live('click',function(){ slider.startAuto(); });jQuery('.bx-wrapper .bx-viewport').css('background-color', 'transparent');jQuery('.bx-wrapper .bxslider li').css('text-align', 'left');jQuery('.bx-wrapper .bx-pager').css('bottom', '-40px');var params = {theme		: 'dark-thick',setHeight	: '100%',advanced	:	{autoExpandHorizontalScroll:true,setTop: 0}};jQuery('.scrollContainer').mCustomScrollbar(params);});</script></div><?php }} ?>
+>>>>>>> parent of 43f370b (unk csrd.login.tpl changes)
