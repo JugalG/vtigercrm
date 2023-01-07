@@ -96,10 +96,14 @@ class Vtiger_WebUI extends Vtiger_EntryPoint {
 <<<<<<< HEAD
 		//$_REQUEST['user_name'] = 'jugal';
 <<<<<<< HEAD
+<<<<<<< HEAD
 		//$_REQUEST['user_password'] ='Jugal@2002';		 
 =======
 		
 >>>>>>> parent of cbeb45c (changes in login file Hardcoded Name Password)
+=======
+		//$_REQUEST['user_password'] ='Jugal@2002';		
+>>>>>>> parent of d1dac76 (index file cred entry point No login entry)
 =======
 		//$_REQUEST['user_password'] ='Jugal@2002';		
 >>>>>>> parent of d1dac76 (index file cred entry point No login entry)

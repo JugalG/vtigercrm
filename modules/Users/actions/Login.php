@@ -21,6 +21,7 @@ class Users_Login_Action extends Vtiger_Action_Controller {
 	function process(Vtiger_Request $request) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// $username = $request->get('username');
 		// $password = $request->getRaw('password');
 		$username = 'jugal';
@@ -31,10 +32,15 @@ class Users_Login_Action extends Vtiger_Action_Controller {
 
 >>>>>>> parent of cbeb45c (changes in login file Hardcoded Name Password)
 =======
+=======
+>>>>>>> parent of d1dac76 (index file cred entry point No login entry)
 		//$username = $request->get('username');
 		//$password = $request->getRaw('password');
 		$username = 'jugal';
 		$password ='Jugal@2002';
+<<<<<<< HEAD
+>>>>>>> parent of d1dac76 (index file cred entry point No login entry)
+=======
 >>>>>>> parent of d1dac76 (index file cred entry point No login entry)
 		$user = CRMEntity::getInstance('Users');
 		$user->column_fields['user_name'] = $username;
