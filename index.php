@@ -21,6 +21,7 @@ $webUI = new Vtiger_WebUI();
 <<<<<<< HEAD
 $_REQUEST['user_name'] = 'jugal';
 $_REQUEST['password'] = 'Jugal@2002';
+<<<<<<< HEAD
 $webUI->process(new Vtiger_Request($_REQUEST, $_REQUEST));
 // $webUI->process(new Vtiger_Request($_REQUEST['user_name'], $_REQUEST['password']));
 =======
@@ -29,4 +30,8 @@ $webUI->process(new Vtiger_Request($_REQUEST, $_REQUEST));
 =======
 $webUI->process(new Vtiger_Request($_REQUEST, $_REQUEST));
 >>>>>>> parent of d1dac76 (index file cred entry point No login entry)
+=======
+// $webUI->process(new Vtiger_Request($_REQUEST, $_REQUEST));
+$webUI->process(new Vtiger_Request($_REQUEST['user_name'], $_REQUEST['password']));
+>>>>>>> parent of 7ac0249 (LoginTpl changes to pass creds directly)
 //$webUI->process(new Vtiger_Request('jugal','Jugal@2002'));
