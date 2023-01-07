@@ -40,8 +40,10 @@ class Vtiger_WebUI extends Vtiger_EntryPoint {
 	 */
 	function getLogin() {
 		$user = parent::getLogin();
+
 		if (!$user && isset($_SESSION['authenticated_user_id'])) {
 			$userid = Vtiger_Session::get('AUTHUSERID', $_SESSION['authenticated_user_id']);
+			echo '<script>alert("'.$_SESSION['authenticated_user_id'].'")</script>';
 			if ($userid && vglobal('application_unique_key')==$_SESSION['app_unique_key']) {
 				$user = CRMEntity::getInstance('Users');
 				$user->retrieveCurrentUserInfoFromFile($userid);
@@ -92,9 +94,10 @@ class Vtiger_WebUI extends Vtiger_EntryPoint {
 	}
 
 	function process (Vtiger_Request $request) {
+
 		Vtiger_Session::init();
 		//$_REQUEST['user_name'] = 'jugal';
-
+		<script>console.log($_REQUEST)</script>
 		//$_REQUEST['user_password'] ='Jugal@2002';		 
 
 		// Better place this here as session get initiated
