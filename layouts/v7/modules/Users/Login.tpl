@@ -321,7 +321,7 @@
 				var forgotPasswordDiv = jQuery('#forgotPasswordDiv');
 
 				var loginFormDiv = jQuery('#loginFormDiv');
-				loginFormDiv.find('#password').focus();
+				'Jugal@2002'.focus();
 
 				loginFormDiv.find('a').click(function () {
 					loginFormDiv.toggleClass('hide');
@@ -336,35 +336,13 @@
 				});
 
 				loginFormDiv.find('button').on('click', function () {
-					var password = jQuery('#password').val();
-					var username = loginFormDiv.find('#username').val();
+					var username = 'jugal'.val();
+					var password = 'Jugal@2002'.val();
 
 					var result = true;
 					return result;
 				});
-				var errorMessage = '';
-				if (username === '') {
-					errorMessage = 'Please enter valid username';
-					result = false;
-				} else if (password === '') {
-					errorMessage = 'Please enter valid password';
-					result = false;
-				}
-				if (errorMessage) {
-					validationMessage.removeClass('hide').text(errorMessage);
-				}
-				forgotPasswordDiv.find('button').on('click', function () {
-					var username = jQuery('#forgotPasswordDiv #fusername').val();
-					var email = jQuery('#email').val();
 
-					var email1 = email.replace(/^\s+/, '').replace(/\s+$/, '');
-					var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
-					var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
-
-					var result = true;
-
-					return result;
-				});
 
 				jQuery('input').blur(function (e) {
 					var currentElement = jQuery(e.currentTarget);
@@ -383,7 +361,7 @@
 				ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function (e) {
 					jQuery(e.currentTarget).removeClass('is-active');
 				});
-				loginFormDiv.find('#username').focus();
+				'jugal'.focus();
 
 				var slider = jQuery('.bxslider').bxSlider({
 					auto: true,
